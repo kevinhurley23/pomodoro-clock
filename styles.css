@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap");
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(151, 195, 205);
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 3px;
+}
+
+#app {
+  position: relative;
+  background-image: linear-gradient(145deg, rgb(146, 18, 37), rgb(115, 26, 10));
+  padding: 25px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+}
+
+#main-title {
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  display: block;
+  font-size: 30px;
+}
+
+h2 {
+  display: block;
+  font-size: 22px;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.length-control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 198px;
+}
+
+.label {
+  flex-basis: 200px;
+  text-align: center;
+}
+
+#timer {
+  height: 190px;
+  width: 190px;
+  border: 6px solid white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#time-left {
+  font-size: 40px;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+}
+
+i {
+  font-size: 26px;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 651px) {
+  #main-title {
+    position: relative;
+    top: 40px;
+    left: 125px;
+  }
+  #session-control {
+    position: absolute;
+    left: 20px;
+    top: 250px;
+  }
+
+  #break-control {
+    position: absolute;
+    right: 30px;
+    top: 250px;
+  }
+
+  #timer {
+    position: absolute;
+    top: 220px;
+    left: 220px;
+  }
+
+  #timer-control {
+    position: absolute;
+    width: 100px;
+    bottom: 140px;
+    left: 280px;
+  }
+
+  a {
+    position: absolute;
+    bottom: 65px;
+    left: 275px;
+  }
+}
+
+@media (max-width: 650px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 700px;
+  }
+
+  #app {
+    height: 100vh;
+    min-height: 700px;
+    width: 100vw;
+    min-width: 350px;
+    border-radius: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #timer-control {
+    margin-top: 20px;
+  }
+}
